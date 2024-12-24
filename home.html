@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Killer Sprocket Brewery, an independent family-owned brewery in Boronia, Victoria.">
+    <title>Killer Sprocket Brewery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo">
+                <img src="KS_Logo_2020_BW.png" alt="Killer Sprocket Logo">
+            </a>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="beers.html">Beers</a></li>
+                    <li><a href="taproom.html">Taproom</a></li>
+                    <li><a href="https://killersprocket.square.site/">Buy Online</a></li>
+                    <li><a href="wholesale.html">Wholesale</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="codeofconduct.html">Code of Conduct</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Welcome to Killer Sprocket Brewery</h1>
+            <p class="hero-subtext">Independent. Family-Owned. Made in Boronia.</p>
+            <a href="beers.html" class="cta">Explore Our Beers</a>
+        </section>
+
+        <!-- Core Beers Section -->
+        <section class="core-beers">
+            <h2>Our Core Range</h2>
+            <div class="beer-list">
+                <div class="beer">
+                    <img src="KS-Core-PALE-Can2.png" alt="Pale Ale Can">
+                    <p>Pale Ale</p>
+                </div>
+                <div class="beer">
+                    <img src="KS-Core-IPA-Can2.png" alt="IPA Can">
+                    <p>IPA</p>
+                </div>
+                <div class="beer">
+                    <img src="KS-Core-Amber-Can2.png" alt="Amber Ale Can">
+                    <p>Amber Ale</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Beer Section -->
+        <section class="featured-beer">
+            <h2>Featured Beer</h2>
+            <img src="KS-SOUR-OMG.png" alt="Featured Beer">
+            <p>Try our new OMG Sour - a refreshing orange, mango, and guava sour perfect for summer!</p>
+            <a href="beers.html" class="cta">Learn More</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://www.facebook.com/KillerSprocket/">
+                    <img src="FB.png" alt="Facebook Logo" class="SM">
+                </a>
+                <a href="https://www.instagram.com/killersprocket/">
+                    <img src="INSTA.png" alt="Instagram Logo" class="SM">
+                </a>
+                <a href="https://untappd.com/KillerSprocket">
+                    <img src="UT.png" alt="Untappd Logo" class="SM">
+                </a>
+            </div>
+            <p>&copy; Killer Sprocket Brewery &amp; Tasting Room 2024</p>
+            <p>Liquor Licence: 32808381 ABN: 67 644 384 243</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

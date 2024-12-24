@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Killer Sprocket's Core Range and Limited Releases.">
+    <title>Killer Sprocket Beers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo">
+                <img src="KS_Logo_2020_BW.png" alt="Killer Sprocket Logo">
+            </a>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="beers.html">Beers</a></li>
+                    <li><a href="taproom.html">Taproom</a></li>
+                    <li><a href="https://killersprocket.square.site/">Buy Online</a></li>
+                    <li><a href="wholesale.html">Wholesale</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="codeofconduct.html">Code of Conduct</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="beers">
+			<section class="page-logo">
+    <img src="KS_2020_Logo2.svg" alt="Killer Sprocket Logo" class="logo">
+</section>
+
+            <h1>Core Range</h1>
+
+            <div class="beer-item">
+                <h2>Pale Ale</h2>
+                <h3>American Pale Ale</h3>
+                <img src="KS-Core-PALE-Can2.png" alt="Pale Ale Can" class="beer-image">
+                <p><b>Style:</b> American Pale Ale | <b>ABV:</b> 4.5 | <b>IBU:</b> 35</p>
+                <p>Straw coloured with a white head. Killer Sprocket Pale Ale balances a pleasing malt backbone while staying hop forward and keeping overall bitterness low.</p>
+            </div>
+
+            <div class="beer-item">
+                <h2>IPA</h2>
+                <h3>American IPA</h3>
+                <img src="KS-Core-IPA-Can2.png" alt="IPA Can" class="beer-image">
+                <p><b>Style:</b> India Pale Ale | <b>ABV:</b> 6.5 | <b>IBU:</b> 50</p>
+                <p>Killer Sprocket IPA is a balanced American style IPA with a strong malt backbone and medium bitterness utilizing Cascade and Mosaic hops both in the boil and dry hop.</p>
+            </div>
+
+            <div class="beer-item">
+                <h2>Amber Ale</h2>
+                <h3>A darker shade of amber.</h3>
+                <img src="KS-Core-Amber-Can2.png" alt="Amber Ale Can" class="beer-image">
+                <p><b>Style:</b> American Amber Ale | <b>ABV:</b> 4.8 | <b>IBU:</b> 27</p>
+                <p>Killer Sprocket Amber Ale utilizes Pale, Munich, Crystal and Chocolate malts to achieve toffee and caramel flavours with a slight level of roasting.</p>
+            </div>
+
+            <h1>Current Limited Releases</h1>
+
+            <div class="beer-item">
+                <h2>OMG Sour</h2>
+                <h3>Orange, Mango, and Guava Sour</h3>
+                <img src="KS-SOUR-OMG.png" alt="OMG Sour Can" class="beer-image">
+                <p><b>Style:</b> Berliner Weisse | <b>ABV:</b> 3.8 | <b>IBU:</b> 6.5</p>
+                <p>Refreshing, fruity beer with tropical flavours of mango, orange, and guava. Light and effervescent, with a dry, crisp finish.</p>
+            </div>
+
+            <div class="beer-item">
+                <h2>Stout</h2>
+                <h3>American Stout</h3>
+                <img src="KS-Stout.png" alt="Stout Can" class="beer-image">
+                <p><b>Style:</b> American Stout | <b>ABV:</b> 5.8 | <b>IBU:</b> 70</p>
+                <p>Dark and dry, Killer Sprocket Stout pours jet black with a tan head and aromas of toffee and brown sugar.</p>
+            </div>
+
+            <div class="beer-item">
+                <h2>Risa Sunrise</h2>
+                <h3>Tropical Pale Ale</h3>
+                <img src="KS-LR-RS.png" alt="Risa Sunrise Can" class="beer-image">
+                <p><b>Style:</b> Pale Ale | <b>ABV:</b> 4.3 | <b>IBU:</b> 11</p>
+                <p>A vibrant golden ale with tropical aromas of pineapple and mango. Perfect for summer.</p>
+            </div>
+        </section>
+    </main>
+
+ <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://www.facebook.com/KillerSprocket/">
+                    <img src="FB.png" alt="Facebook Logo" class="SM">
+                </a>
+                <a href="https://www.instagram.com/killersprocket/">
+                    <img src="INSTA.png" alt="Instagram Logo" class="SM">
+                </a>
+                <a href="https://untappd.com/KillerSprocket">
+                    <img src="UT.png" alt="Untappd Logo" class="SM">
+                </a>
+            </div>
+            <p>&copy; Killer Sprocket Brewery &amp; Tasting Room 2024</p>
+            <p>Liquor Licence: 32808381 ABN: 67 644 384 243</p>
+        </div>
+    </footer>
+  <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit Killer Sprocket Brewery's taproom for tastings and take-away sales.">
+    <title>Killer Sprocket Taproom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo">
+                <img src="KS_Logo_2020_BW.png" alt="Killer Sprocket Logo">
+            </a>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="beers.html">Beers</a></li>
+                    <li><a href="taproom.html">Taproom</a></li>
+                    <li><a href="https://killersprocket.square.site/">Buy Online</a></li>
+                    <li><a href="wholesale.html">Wholesale</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="codeofconduct.html">Code of Conduct</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="taproom-hero">
+			
+            <h1>Visit Our Taproom</h1>
+            <p>Experience the heart of Killer Sprocket Brewery.</p>
+        </section>
+
+       <section class="about">
+    <div class="container">
+		<section class="page-logo">
+</section>
+
+        <p>The Killer Sprocket production brewery is located in Boronia, Victoria, east of Melbourne.</p>
+        <p>Open every Friday and Saturday from 1pm until 8pm and Sunday from 1pm until 6pm, the tap room provides a small bar with take-away sales.</p>
+        <p>No need to book, you can just turn up. There are plenty of seats and tables available for you to enjoy our unique beers.</p>
+        <img src="KS_TapRoom2.jpg" alt="Photograph of Killer Sprocket Tasting Room" class="center">
+    </div>
+</section>
+
+        <section class="location">
+            <div class="container">
+                <h2>Location</h2>
+                <p><strong>Killer Sprocket Brewery &#38; Tasting Room</strong></p>
+                <p>1c/981 Mountain Hwy<br>Boronia, VIC 3155, AU</p>
+                <p><strong>Email:</strong> contact@killersprocket.com.au</p>
+                <p><strong>Phone:</strong> 0434 154 557</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.9914325656475!2d145.28301291596642!3d-37.85239617974678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad63b0500c5c9cd%3A0xdb49b236fa0c99d2!2s1C%2F981%20Mountain%20Hwy%2C%20Boronia%20VIC%203155%2C%20Australia!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+ <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://www.facebook.com/KillerSprocket/">
+                    <img src="FB.png" alt="Facebook Logo" class="SM">
+                </a>
+                <a href="https://www.instagram.com/killersprocket/">
+                    <img src="INSTA.png" alt="Instagram Logo" class="SM">
+                </a>
+                <a href="https://untappd.com/KillerSprocket">
+                    <img src="UT.png" alt="Untappd Logo" class="SM">
+                </a>
+            </div>
+            <p>&copy; Killer Sprocket Brewery &amp; Tasting Room 2024</p>
+            <p>Liquor Licence: 32808381 ABN: 67 644 384 243</p>
+        </div>
+    </footer>
+	  <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

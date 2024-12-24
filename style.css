@@ -1,0 +1,710 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #000;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.active {
+    font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Navigation */
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-menu a {
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 2px 4px 
+}
+
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Adjust to the desired height */
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent the logo from exceeding container width */
+    display: block; /* Avoid inline spacing issues */
+    margin: 0 auto; /* Center the logo */
+}
+
+
+/* Hero Section */
+.taproom-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('KS_TapRoom2.jpg') no-repeat center center/cover;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+.taproom-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.taproom-hero p {
+    font-size: 1.2rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Taproom Image */
+.about .center {
+    max-width: 30%; /* Reduced size for better presentation */
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.about .center:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+
+
+/* Paragraph Styling */
+p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    padding: 0 1rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+
+    header nav a {
+        line-height: 1.4;
+    }
+
+    .taproom-hero {
+        padding: 4rem 1rem; /* Adjust spacing for smaller screens */
+    }
+
+    p {
+        text-align: left; /* Align paragraphs left on small screens */
+    }
+}
+
+
+/* Logo Styling */
+.logo img {
+    height: 50px; /* Set a fixed height for the logo */
+    width: auto; /* Maintain aspect ratio */
+    display: block; /* Avoid inline spacing issues */
+    max-width: 100%; /* Prevent the logo from exceeding container width */
+    margin: 0 auto; /* Center the logo */
+}
+
+/* Navigation Links */
+header nav a {
+    color: #fff; /* Default link color */
+    text-decoration: none; /* No underline by default */
+    font-size: 1rem; /* Consistent font size */
+    font-weight: 400; /* Keep consistent font weight */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+}
+
+header nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    font-weight: 400; /* Ensure no bold effect */
+}
+
+
+/* Beers Section */
+.beers {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.beers h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.item {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.item img {
+    max-width: 200px;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.item h2 {
+    font-size: 2rem;
+    color: #000;
+    margin: 1rem 0;
+}
+
+.item p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+/* Beer Image Styling */
+.beer-image {
+    display: block; /* Ensure the image is treated as a block */
+    margin: 1rem auto; /* Center the image */
+    max-width: 150px; /* Control the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Styling for H3 (Text under H2) */
+h3 {
+    text-align: center; /* Center-align the text */
+    font-style: italic; /* Italicize the text */
+    font-size: 1.2rem; /* Adjust the size for hierarchy */
+    margin: 0.5rem 0; /* Add spacing above and below */
+    color: #333; /* Optional: Adjust color to suit your design */
+}
+
+
+/* Wholesale Section */
+.wholesale {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.wholesale h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sales-item {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff; /* Optional: Add a background to each block */
+    border-radius: 8px; /* Optional: Rounded corners for a polished look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+.sales-item h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.sales-item p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.sales-item a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.sales-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer Styling */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Space between footer elements */
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Space between social media icons */
+}
+
+footer .social-media a img.SM {
+    width: 20px; /* Adjust size of social media icons */
+    height: auto;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+footer .social-media a img.SM:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+footer p {
+    font-size: 0.9rem; /* Adjust footer text size */
+    line-height: 1.4;
+	text-align: center;
+    margin: 0;
+}
+
+
+/* About Section - Adjusted */
+.about {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.about .center {
+    max-width: 400px; /* Set a fixed maximum width in pixels */
+    width: 100%; /* Allow the image to shrink proportionally */
+    height: auto; /* Maintain aspect ratio */
+    margin: 2rem auto; /* Center the image with spacing above and below */
+    display: block; /* Ensure the image is a block element */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+}
+
+
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: #fff; /* Default text color for the hero section */
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero .hero-subtext {
+    font-size: 1.5rem;
+	text-align: center;
+    
+    color: #fff; /* Force text color to white */
+    font-weight: 300; /* Optional: Lighter weight for contrast */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8); /* Optional: Subtle shadow for readability */
+}
+
+.hero .cta {
+    background: #000; /* Black button */
+    color: #fff; /* White text */
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.hero .cta:hover {
+    background: #333; /* Slightly lighter black on hover */
+}
+
+/* Introduction Section */
+.intro {
+    padding: 2rem;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro a {
+    color: #ff5722;
+    text-decoration: underline;
+}
+/* Core Beers Section */
+.core-beers .beer-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Even spacing between items */
+    align-items: flex-start; /* Align all items at the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.core-beers .beer {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align content */
+    width: 150px; /* Ensure consistent width for all items */
+    text-align: center; /* Center-align text */
+}
+
+.core-beers .beer img {
+    max-height: 150px; /* Enforce consistent image height */
+    width: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.5rem; /* Add space below image */
+}
+
+.core-beers .beer p {
+    font-weight: bold; /* Make the text bold */
+    margin: 0; /* Remove extra margins */
+}
+
+/* Code of Conduct Section */
+.code-of-conduct {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.code-of-conduct h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.code-of-conduct h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.code-of-conduct p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.code-of-conduct a {
+    color: black;
+	font-weight: bold;
+    text-decoration: none;
+}
+
+.code-of-conduct a:hover {
+    text-decoration: underline;
+}
+
+.code-of-conduct .logo {
+    display: block; /* Ensures the logo behaves as a block element */
+    max-width: 150px; /* Adjust size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 1rem; /* Center the logo and add spacing below */
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.contact p {
+    max-width: 800px;
+    margin: 1rem auto;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.contact .contact-details {
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.contact .contact-details a {
+    color: #ff5722;
+    text-decoration: none;
+}
+
+.contact .contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Google Map Styling */
+.google-map {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.google-map iframe {
+    max-width: 100%;
+    border: 0;
+    border-radius: 8px; /* Optional: Rounded corners for a modern look */
+}
+
+
+/* Page Logo Section */
+.page-logo {
+    text-align: center; /* Centers the logo */
+    margin: 2rem 0; /* Adds spacing above and below the logo */
+}
+
+.page-logo .logo {
+    max-width: 150px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Center-align the logo */
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    position: relative;
+    animation: moveBackground 10s infinite linear;
+}
+
+@keyframes moveBackground {
+    0% { background-position: center center; }
+    100% { background-position: center top; }
+}
+
+/* Featured Beer Section */
+.featured-beer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9; /* Match the footer's or surrounding sections' background color */
+    margin: 0; /* Remove any unintended margins */
+}
+
+.featured-beer img {
+    max-width: 300px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.featured-beer p {
+    margin: 1rem auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.featured-beer .cta {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.featured-beer .cta:hover {
+    background: #333;
+}
+
+.featured-beer {
+    margin-bottom: 0; /* Ensure no extra margin below the section */
+}
+
+footer {
+    margin-top: 0; /* Remove any default margin above the footer */
+}
+
+.age-verification {
+    display: flex; /* Enables Flexbox for centering */
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 100vh; /* Full viewport height for vertical centering */
+    text-align: center; /* Aligns text inside the flex container */
+    background-color: #fff; /* White background */
+}
+
+.age-verification h1 {
+    margin-bottom: 1rem; /* Adds spacing below the heading */
+    color: #000;
+}
+
+.age-verification p {
+    font-size: 1rem;
+    margin: 0 0 2rem 0; /* Adds spacing below the paragraph */
+    color: #000; /* Ensures text is black */
+    line-height: 1.6; /* Improves text readability */
+}
+
+
+/* Form Buttons */
+form input[type="submit"] {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e64a19;
+}
+
+/* Global <h2> Styling */
+h2 {
+    font-size: 2rem; /* Standard size for headings */
+    font-weight: bold; /* Ensure headings stand out */
+    color: #000; /* Black text for good contrast */
+    margin: 2rem 0 1rem; /* Add space above and below */
+    text-align: center; /* Center-align headings globally */
+    line-height: 1.4; /* Improve readability */
+}

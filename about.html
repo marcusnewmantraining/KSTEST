@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Killer Sprocket, an independent family-owned brewery in Boronia, Victoria.">
+    <title>About Killer Sprocket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo">
+                <img src="KS_Logo_2020_BW.png" alt="Killer Sprocket Logo">
+            </a>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="beers.html">Beers</a></li>
+                    <li><a href="taproom.html">Taproom</a></li>
+                    <li><a href="https://killersprocket.square.site/">Buy Online</a></li>
+                    <li><a href="wholesale.html">Wholesale</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="codeofconduct.html">Code of Conduct</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+			<section class="page-logo">
+    <img src="KS_2020_Logo2.svg" alt="Killer Sprocket Logo" class="logo">
+</section>
+
+            <h1>Who We Are</h1>
+            <p>Killer Sprocket is a family-owned, proudly independent brewery based in Boronia, Victoria, just east of Melbourne.</p>
+
+            <p>Founded by beer fanatics and home brewers Sean and Andrea Ryan in 2012, Killer Sprocket started out brewing wherever they could find a bit of spare tank space, providing the perfect opportunity to hone their recipes and work alongside some of the best brewers in Australia.</p>
+
+            <p>Having outgrown the transient brewing life, December 2019 saw them putting down roots in a space of their own. Building their own brewery in the eastern suburbs of Melbourne.</p>
+
+            <p>2024 saw the brewery move around the corner to a bigger premises with an onsite tap room.</p>
+
+            <p>For more information on Killer Sprocket or to make an order please send an email through the contact page.</p>
+
+            <img src="KS_SandA.jpg" alt="Photography of Brewery owners Sean and Andrea Ryan at Killer Sprocket Brewery &amp; Tasting Room" class="center">
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="https://www.facebook.com/KillerSprocket/">
+                    <img src="FB.png" alt="Facebook Logo" class="SM">
+                </a>
+                <a href="https://www.instagram.com/killersprocket/">
+                    <img src="INSTA.png" alt="Instagram Logo" class="SM">
+                </a>
+                <a href="https://untappd.com/KillerSprocket">
+                    <img src="UT.png" alt="Untappd Logo" class="SM">
+                </a>
+            </div>
+            <p>&copy; Killer Sprocket Brewery &amp; Tasting Room 2024</p>
+            <p>Liquor Licence: 32808381 ABN: 67 644 384 243</p>
+        </div>
+    </footer>
+	  <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
